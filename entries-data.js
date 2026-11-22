@@ -137,6 +137,16 @@ var ONAYAMI_DATA = {
       url: "entries/010.html",
       verdict: "改善できる見込みあり",
     },
+    {
+      no: "011",
+      title: "マイナンバーカードの更新と手続きでつまずく。暗証番号も申請先も分からなくなった",
+      summary:
+        "カードの更新期限が近づいているが、スマホ申請はできても受け取りは窓口予約が必要で、暗証番号の種類が多くて混乱し、申請先のサービス移行もあって何から手をつければいいか分からない。",
+      categories: ["online-procedures", "pc-smartphone"],
+      date: "2026-11-22",
+      url: "entries/011.html",
+      verdict: "改善できる見込みあり",
+    },
   ],
 };
 
