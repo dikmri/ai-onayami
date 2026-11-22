@@ -107,6 +107,16 @@ var ONAYAMI_DATA = {
       url: "entries/007.html",
       verdict: "改善できる見込みあり",
     },
+    {
+      no: "008",
+      title: "Excel の関数が覚えられず、集計や転記を手作業でしている。少しずつ使えるようになるには",
+      summary:
+        "仕事で毎日 Excel を使うのに、関数が覚えられない。VLOOKUP や SUMIF は使いたい場面があるのに式の書き方が分からず、そのたびに検索して調べ直している。集計や転記を手作業で続けて残業になることも。今さら聞きづらい関数を少しずつ使えるようになる方法。",
+      categories: ["pc-smartphone"],
+      date: "2026-11-22",
+      url: "entries/008.html",
+      verdict: "改善できる見込みあり",
+    },
   ],
 };
 
