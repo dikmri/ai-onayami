@@ -77,6 +77,16 @@ var ONAYAMI_DATA = {
       url: "entries/004.html",
       verdict: "改善できる見込みあり",
     },
+    {
+      no: "005",
+      title: "スマホの電池がすぐ減る。朝は満タンなのに夕方には赤くなる",
+      summary:
+        "朝100%なのに夕方には赤い警告。使っていないはずなのに減る電池と、外出先で決済や地図が使えなくなる不安を、設定の見直しで長持ちさせる方法。",
+      categories: ["pc-smartphone"],
+      date: "2026-11-22",
+      url: "entries/005.html",
+      verdict: "改善できる見込みあり",
+    },
   ],
 };
 
