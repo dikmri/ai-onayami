@@ -57,6 +57,16 @@ var ONAYAMI_DATA = {
       url: "entries/002.html",
       verdict: "改善できる見込みあり",
     },
+    {
+      no: "003",
+      title: "奥の部屋だけ Wi-Fi が届かない、家中快適にするには",
+      summary:
+        "リビングでは快適なのに、奥の部屋や2階では Wi-Fi が弱くてつながりにくい。仕事用の机がある部屋が使えず、ルーターの買い替えか中継器かも分からない。",
+      categories: ["pc-smartphone"],
+      date: "2026-11-22",
+      url: "entries/003.html",
+      verdict: "改善できる見込みあり",
+    },
   ],
 };
 
