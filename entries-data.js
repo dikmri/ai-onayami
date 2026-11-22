@@ -47,6 +47,16 @@ var ONAYAMI_DATA = {
       url: "entries/001.html",
       verdict: "軽減できる見込みあり",
     },
+    {
+      no: "002",
+      title: "パソコンが遅くて容量もいっぱい、買い替える前にできること",
+      summary:
+        "パソコンの動作が遅く、Cドライブの空き容量も残りわずか。写真や動画の編集アプリも重い。買い替える前に自分でできることを試したい。",
+      categories: ["pc-smartphone"],
+      date: "2026-11-22",
+      url: "entries/002.html",
+      verdict: "改善できる見込みあり",
+    },
   ],
 };
 
