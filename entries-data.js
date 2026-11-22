@@ -87,6 +87,16 @@ var ONAYAMI_DATA = {
       url: "entries/005.html",
       verdict: "改善できる見込みあり",
     },
+    {
+      no: "006",
+      title: "写真が何千枚もたまって容量がいっぱい。大切な写真を失わずに整理するには",
+      summary:
+        "撮ろうとしたら「容量がいっぱいです」。iCloud も残りわずかで、消すとクラウド側も消えそうで怖い。大切な写真を失わずに整理し、残す方法。",
+      categories: ["pc-smartphone"],
+      date: "2026-11-22",
+      url: "entries/006.html",
+      verdict: "改善できる見込みあり",
+    },
   ],
 };
 
