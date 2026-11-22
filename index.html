@@ -7,6 +7,8 @@
   <title>AIお悩み解決ドットコム</title>
   <meta name="description" content="SNSの公開投稿をもとに匿名化・合成したお悩みを、AIが検証して行動プランを考える実験プロジェクトです。">
   <link rel="stylesheet" href="style.css">
+  <script src="entries-data.js" defer></script>
+  <script src="site.js" defer></script>
 </head>
 <body>
   <header class="site-header site-header--home">
@@ -30,21 +32,49 @@
 
     <section class="list-section" aria-labelledby="list-heading">
       <h2 id="list-heading">解決プランを公開したお悩み</h2>
-      <ul class="entry-list">
+
+      <search class="finder">
+        <form id="finder-form" action="index.html" method="get">
+          <div class="finder-field">
+            <label for="finder-q">キーワードで探す</label>
+            <p id="finder-q-hint" class="finder-hint">タイトル、お悩みの要約、カテゴリ名から探します。空白で区切ると、すべての語を含むお悩みに絞り込みます。</p>
+            <input type="search" id="finder-q" name="q" enterkeyhint="search" autocorrect="off" autocapitalize="none" spellcheck="false" aria-describedby="finder-q-hint">
+          </div>
+          <fieldset class="chips">
+            <legend>カテゴリで絞り込む</legend>
+            <!-- カテゴリの選択肢は entries-data.js の categories から描画する -->
+            <div class="chip-list" id="category-chips"></div>
+          </fieldset>
+        </form>
+      </search>
+
+      <p id="result-status" class="result-status" role="status"></p>
+
+      <!-- 一覧は entries-data.js の entries から描画する -->
+      <ul class="entry-list" id="entry-list" role="list"></ul>
+
+      <div id="no-results" class="no-results" hidden>
+        <p>条件に合うお悩みは見つかりませんでした。キーワードを短くするか、カテゴリを「すべて」にしてみてください。</p>
+        <button type="button" id="finder-reset" class="button-secondary">条件をリセット</button>
+      </div>
+
+      <p id="entry-load-error" class="no-results" hidden>記事の一覧を読み込めませんでした。ページを再読み込みしてください。</p>
+
+      <noscript>
+        <p class="no-results">お悩みの一覧と検索は JavaScript で表示しています。ブラウザの設定で JavaScript を有効にしてください。</p>
+      </noscript>
+
+      <template id="entry-card-template">
         <li>
           <article class="card">
-            <p class="card-meta">No.001 ・ <time datetime="2026-11-22">2026年11月22日</time>公開</p>
-            <h3><a class="card-link" href="entries/001.html">職場の人間関係に気を使い続けて、夜も眠れない</a></h3>
-            <p>同僚や上司の顔色をうかがう毎日で、家に帰っても疲れが取れない。夜中に目が覚めると、仕事や将来の不安で眠れない。</p>
-            <p class="card-verdict">AIの見立て：<strong>軽減できる見込みあり</strong></p>
-            <ul class="tags" aria-label="分類">
-              <li>仕事</li>
-              <li>人間関係</li>
-              <li>睡眠</li>
-            </ul>
+            <p class="card-meta">No.<span data-field="no"></span> ・ <time data-field="date"></time>公開</p>
+            <h3><a class="card-link" data-field="title"></a></h3>
+            <p data-field="summary"></p>
+            <p class="card-verdict" data-field="verdict-row">AIの見立て：<strong data-field="verdict"></strong></p>
+            <ul class="tags" role="list" data-field="categories"></ul>
           </article>
         </li>
-      </ul>
+      </template>
     </section>
   </main>
 
