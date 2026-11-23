@@ -477,6 +477,16 @@ var ONAYAMI_DATA = {
       url: "entries/044.html",
       verdict: "改善できる見込みあり",
     },
+    {
+      no: "045",
+      title: "パソコンやスマホの画面をきれいに撮りたい。スクショと画面録画の簡単なやり方",
+      summary:
+        "画面を伝えたいのに撮り方が分からず、スマホのカメラで画面を撮っている。Print Screen を押しても何も起きないように見える。画面録画も音声が入るか不安で試せない。",
+      categories: ["pc-smartphone"],
+      date: "2026-11-23",
+      url: "entries/045.html",
+      verdict: "改善できる見込みあり",
+    },
   ],
 };
 
