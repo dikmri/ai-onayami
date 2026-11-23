@@ -487,6 +487,16 @@ var ONAYAMI_DATA = {
       url: "entries/045.html",
       verdict: "改善できる見込みあり",
     },
+    {
+      no: "046",
+      title: "スマホの画面が急に暗くなる。勝手に明るさが変わる原因と調整のやり方",
+      summary:
+        "外で使っていたら画面が真っ暗になって壊れたかと思った。夜も急に暗くなり、明るさを上げてもまた暗くなる。勝手に暗くならないようにしたい。",
+      categories: ["pc-smartphone"],
+      date: "2026-11-23",
+      url: "entries/046.html",
+      verdict: "改善できる見込みあり",
+    },
   ],
 };
 
